@@ -4,14 +4,21 @@
  * @license M.I.T
  */
 
+
 // Options
 let options = {
     method : "GET",
     dataType: "json",
-    success: function (result){
-        console.log(result);
+    success: function (data){
+        for (let i = 0; i < data.length; i++) {
+
+            // console.log(data[i]['name']);
+        }
+    },
+    error: function (){
+        console.log('No fucking data has returned');
     }
-}; //
+}; // Tested
 
 // url
 let url = "CON/db_read.php"; // Tested

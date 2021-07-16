@@ -9,15 +9,9 @@ require_once('db_con.php');
 global $conn;
 try {
     $results = $conn->query('select * from employees');
-    $arr = $results->fetchAll();
-    $tbl_names = ['Id', 'Name', 'In Office'];
-
-    foreach ($arr as $item) {
-        $rows[] = $item['id'] . $item['name'] . ($item['in_office'] ? 1 : 0) . "<br>";
-    }
-    for ($i = 0; $i < count($rows); $i++) {
-        echo $rows[$i];
-    }
+    $arr = $results->fetchAll(PDO::FETCH_OBJ);
 } catch (Exception $e) {
     echo $e->getMessage();
 }
+
+echo json_encode($arr);

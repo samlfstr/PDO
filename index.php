@@ -20,6 +20,10 @@ require_once('./CON/db_read.php');
 
 <button id="click_me"> Get Data </button>
 
+<ul>
+  <li id="x"></li>
+</ul>
+
 
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
