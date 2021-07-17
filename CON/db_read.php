@@ -7,6 +7,7 @@ require_once('db_con.php');
  */
 
 global $conn;
+$encoded = "";
 try {
     $results = $conn->query('select * from employees');
     $arr = $results->fetchAll(PDO::FETCH_OBJ);
@@ -14,4 +15,5 @@ try {
     echo $e->getMessage();
 }
 
-echo json_encode($arr);
+$encoded = json_encode($arr);
+echo $encoded;

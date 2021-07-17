@@ -6,7 +6,8 @@
  */
 require_once('db_cred.php');
 
-/*$con = pg_connect("$host $port $dbname $user $password");
+/*
+ $con = pg_connect("$host $port $dbname $user $password");
 
 $query = "";
 
@@ -15,7 +16,8 @@ echo $json_response = "[";
 while ($row = pg_fetch_object($result)) {
     echo $json_response = json_encode($row) . ",";
 }
-echo $json_response = ']';*/
+echo $json_response = ']';
+*/
 
     $con_string = "pgsql:$host;$port";
 

@@ -1,0 +1,35 @@
+/*List _______________*/
+
+.l-container{
+    display: flex;
+    justify-content: center;
+}
+.u-ul{
+    border: 1px solid black;
+    width: 35%;
+    list-style: none;
+    padding: 0;
+}
+.u-li{
+    border: 1px solid black;
+}
+
+/*Table _______________*/
+
+th, td {
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+th{
+    background-color: lightgrey;
+}
+
+
+
+
+
+
+
+
+
