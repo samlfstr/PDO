@@ -20,6 +20,11 @@ try {
     echo $e->getMessage();
 }
 $employee = $results->fetch(PDO::FETCH_ASSOC);
+if ($employee == false){
+    echo "Sorry nothing to show";
+    die();
+}
+echo $count;
 
 ?>
 <!doctype html>
@@ -37,9 +42,13 @@ $employee = $results->fetch(PDO::FETCH_ASSOC);
 <h1>Employee Intel</h1>
 <p>
     <?php
-      echo 'ID : ' . $employee['id'].'<br>';
-      echo 'Name : ' . $employee['name'].'<br>';
-      echo 'Status : ' . ($employee['in_office'] ? 1 : 0).'<br>';
+      if(isset($id)){
+          echo 'ID : ' . $employee['id'].'<br>';
+          echo 'Name : ' . $employee['name'].'<br>';
+          echo 'Status : ' . ($employee['in_office'] ? 1 : 0).'<br>';
+      } else {
+        echo "Sorry nothing to show";
+      }
     ?>
 </p>
 
