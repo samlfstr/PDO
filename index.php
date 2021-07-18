@@ -3,6 +3,9 @@
  * @author Isa Ozsoy
  * @license M.I.T
 -->
+<?php
+require_once('CON/db_read.php');
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,12 +18,23 @@
 </head>
 <body>
 
+<div class="l-container">
+  <ul class="l-employees">
+      <?php
+      for ($i = 0; $i < count($arr); $i++) {
+          $l_str = '<li>';
+          $l_str .= '<a href="employees.php?id=';
+          $l_str .= $arr[$i]['id'].'">';
+          $l_str .= $arr[$i]['name'];
+          $l_str .= '</li></a>';
+          echo $l_str;
+      }
+      ?>
+  </ul>
+</div>
 
-<div class="l-container"></div>
 <div class="t-container"></div>
-<button id="click_me"> Get Data</button>
-
-
+<!--<button id="click_me"> Get Data</button>-->
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="JS/main.js"></script>

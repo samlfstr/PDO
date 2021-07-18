@@ -10,10 +10,14 @@ global $conn;
 $encoded = "";
 try {
     $results = $conn->query('select * from employees');
-    $arr = $results->fetchAll(PDO::FETCH_OBJ);
+    $arr = $results->fetchAll(PDO::FETCH_ASSOC);
+    /* Works with Ajax request
+     $arr = $results->fetchAll(PDO::FETCH_OBJ);
+    */
 } catch (Exception $e) {
     echo $e->getMessage();
 }
 
-$encoded = json_encode($arr);
-echo $encoded;
+/* Works with Ajax request
+    $encoded = json_encode($arr);
+*/

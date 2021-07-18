@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01fecd5d-db18-4a17-93af-63b0d6ffeba6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/STYLE/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CON/db_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/CON/db_read.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STYLE/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/STYLE/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +46,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -72,7 +71,7 @@
       <workItem from="1626380985711" duration="4539000" />
       <workItem from="1626387405738" duration="10729000" />
       <workItem from="1626433203211" duration="176000" />
-      <workItem from="1626433651747" duration="9963000" />
+      <workItem from="1626433651747" duration="20010000" />
     </task>
     <servers />
   </component>
