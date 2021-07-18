@@ -6,17 +6,20 @@
 <?php
 require_once('db_con.php');
 
-$id = !empty($_GET['id']) ?? 'Empty';
+if (!empty($_GET['id'])){
+    $id = $_GET['id'];
+}
+
 global $conn;
 
 try {
-    $db_query = 'select * from employees where id='.$id;
-    $results = $conn->query($db_query);
-    $employee = $results->fetch(PDO::FETCH_ASSOC);
-
+    $results = $conn->prepare('select * from employees where id = ?');
+    $results->bindParam(1,$id);
+    $results->execute();
 } catch (Exception $e) {
     echo $e->getMessage();
 }
+$employee = $results->fetch(PDO::FETCH_ASSOC);
 
 ?>
 <!doctype html>
