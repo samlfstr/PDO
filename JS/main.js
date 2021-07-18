@@ -29,7 +29,7 @@ $(function() {
 }); // Tested
 
 // What to do with data...
-function succesfull(data){
+ function succesfull(data){
     let t_container = $('.t-container');
     let t_str =
         '<table>' +

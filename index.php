@@ -23,7 +23,7 @@ require_once('CON/db_read.php');
       <?php
       for ($i = 0; $i < count($arr); $i++) {
           $l_str = '<li>';
-          $l_str .= '<a href="employees.php?id=';
+          $l_str .= '<a href="CON/db_employees.php?id=';
           $l_str .= $arr[$i]['id'].'">';
           $l_str .= $arr[$i]['name'];
           $l_str .= '</li></a>';

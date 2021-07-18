@@ -11,6 +11,7 @@ $encoded = "";
 try {
     $results = $conn->query('select * from employees');
     $arr = $results->fetchAll(PDO::FETCH_ASSOC);
+
     /* Works with Ajax request
      $arr = $results->fetchAll(PDO::FETCH_OBJ);
     */
